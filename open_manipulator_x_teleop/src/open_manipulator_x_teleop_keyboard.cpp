@@ -57,7 +57,7 @@ OpenManipulatorXTeleopKeyboard::OpenManipulatorXTeleopKeyboard()
   /********************************************************************************
   ** Display in terminal
   ********************************************************************************/
-  this->disable_waiting_for_enter();
+  //this->disable_waiting_for_enter();
   update_timer_ = this->create_wall_timer(10ms, std::bind(&OpenManipulatorXTeleopKeyboard::update_callback, this));
 
   RCLCPP_INFO(this->get_logger(), "OpenManipulator-X Teleop Keyboard Initialised");
@@ -65,7 +65,7 @@ OpenManipulatorXTeleopKeyboard::OpenManipulatorXTeleopKeyboard()
 
 OpenManipulatorXTeleopKeyboard::~OpenManipulatorXTeleopKeyboard() 
 {
-  this->restore_terminal_settings();
+  //this->restore_terminal_settings();
   RCLCPP_INFO(this->get_logger(), "OpenManipulator-X Teleop Keyboard Terminated");
 }
 

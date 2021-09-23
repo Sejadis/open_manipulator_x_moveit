@@ -571,7 +571,7 @@ int main(int argc, char **argv)
     printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
   }
   else
-    printf("port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
+    printf("default port_name and baud_rate are set to %s, %s \n", usb_port.c_str(), baud_rate.c_str());
 
   rclcpp::spin(std::make_shared<open_manipulator_x_controller::OpenManipulatorXController>(usb_port, baud_rate));
   rclcpp::shutdown();

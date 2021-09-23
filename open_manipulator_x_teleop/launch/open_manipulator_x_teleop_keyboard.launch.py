@@ -27,7 +27,7 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='open_manipulator_x_teleop',
-            node_executable='open_manipulator_x_teleop_keyboard',
-            node_name='open_manipulator_x_teleop_keyboard',
+            executable='open_manipulator_x_teleop_keyboard',
+            name='open_manipulator_x_teleop_keyboard',
             output='screen')
     ])
